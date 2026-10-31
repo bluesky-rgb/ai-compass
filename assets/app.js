@@ -5,7 +5,6 @@
     { id: 'core',      file: 'docs/01-核心判断.md',               title: '核心判断',       group: '方向', blurb: 'AI 是工具、数据是价值、人的价值在哪里' },
     { id: 'status',    file: 'docs/02-现状分析.md',               title: '现状分析',       group: '方向', blurb: '四个月积累的优势、短板、机会、风险' },
     { id: 'roadmap',   file: 'docs/03-长期路线.md',               title: '长期路线',       group: '方向', blurb: '三条线在 3 / 6 / 12 个月各做什么' },
-    { id: 'runway',    file: 'docs/13-三个月跑道计划.md',          title: '三个月跑道计划', group: '方向', blurb: '收入优先：求职与接单并行，三个检查点' },
     { id: 'learn',     file: 'docs/09-学习地图.md',               title: '能力线 · 学习地图', group: '三条线', blurb: '按数据闭环补短板，每一项都落到项目上' },
     { id: 'ip-think',  file: 'docs/10-个人IP构建思想.md',          title: 'IP 线 · 构建思想', group: '三条线', blurb: 'IP 的结构、三样资产、阶段叙事、构建原则' },
     { id: 'ip',        file: 'docs/04-IP线-个人IP与X运营.md',      title: 'IP 线 · 个人 IP 与 X', group: '三条线', blurb: '定位、平台分工、X 运营方案' },
@@ -13,6 +12,7 @@
     { id: 'landing',   file: 'docs/05-落地线-科研新手助手.md',      title: '落地线 · 科研新手助手', group: '三条线', blurb: '第一个真实项目：用户、路径、阶段' },
     { id: 'infra',     file: 'docs/06-基础设施.md',               title: '基础设施',       group: '支撑', blurb: '服务器、域名、架构和成本' },
     { id: 'money',     file: 'docs/07-独立站与盈利.md',            title: '独立站与盈利',    group: '支撑', blurb: '先卖服务，再卖工具' },
+    { id: 'runway',    file: 'docs/13-三个月跑道计划.md',          title: '跑道约束与保底', group: '支撑', blurb: '收入从产品和能力中来，三个检查点，求职只作保底' },
     { id: 'todo',      file: 'docs/08-行动清单.md',               title: '行动清单',       group: '执行', blurb: '这两周要做的事，可以直接勾选' },
     { id: 'open',      file: 'docs/12-待解决问题与产出物.md',       title: '待解决问题',     group: '执行', blurb: '还没定的事，以及所有产出物在哪里' },
     { id: 'decisions', file: 'decisions/决策记录.md',             title: '决策记录',       group: '执行', blurb: '每个决定的理由和放弃的选项' },
@@ -20,7 +20,7 @@
     { id: 'map',       file: 'research/水生毒理学领域地图.md',       title: '水生毒理学领域地图', group: '成果', blurb: '落地线第一份交付物' },
   ];
   const EXTERNAL = [{ title: '探索档案', href: 'research/探索档案/index.html', group: '成果', blurb: '95 个仓库、650 项研究的可搜索档案' }];
-  const GUIDE = ['overview', 'core', 'status', 'roadmap', 'runway', 'todo'];
+  const GUIDE = ['overview', 'core', 'status', 'roadmap', 'landing', 'learn', 'todo'];
   const byFile = Object.fromEntries(PAGES.map(p => [p.file, p]));
   const byId = Object.fromEntries(PAGES.map(p => [p.id, p]));
   const cache = {};
@@ -101,7 +101,7 @@
       <section class="hero">
         <p class="eyebrow">长期指导与存档 · 更新于 ${esc(site.updated || '')}</p>
         <h1>一个普通人在 AI 时代，<br>从探索走向落地。</h1>
-        <p class="lead">三条长期线同时推进：<b>能力线</b>补齐 AI 数据闭环，<b>IP 线</b>公开记录并积累信任，<b>落地线</b>用真实场景验证价值并走向盈利。前三个月，<b>收入线</b>优先。</p>
+        <p class="lead">以<b>产品和能力构建</b>为核心：<b>落地线</b>用真实场景打磨产品并带来收入，<b>能力线</b>补齐 AI 数据闭环，<b>IP 线</b>公开记录并积累信任。</p>
         <p class="stage"><span>当前阶段</span>${esc(site.stage || '')}</p>
       </section>
 
