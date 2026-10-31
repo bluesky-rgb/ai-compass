@@ -5,11 +5,14 @@
     { id: 'status',    file: 'docs/02-现状分析.md',               title: '现状分析',       group: '方向', blurb: '四个月积累的优势、短板、机会、风险' },
     { id: 'roadmap',   file: 'docs/03-长期路线.md',               title: '长期路线',       group: '方向', blurb: '三条线在 3 / 6 / 12 个月各做什么' },
     { id: 'learn',     file: 'docs/09-学习地图.md',               title: '能力线 · 学习地图', group: '三条线', blurb: '按数据闭环补短板，每一项都落到项目上' },
+    { id: 'ip-think',  file: 'docs/10-个人IP构建思想.md',          title: 'IP 线 · 构建思想', group: '三条线', blurb: 'IP 的结构、三样资产、阶段叙事、构建原则' },
     { id: 'ip',        file: 'docs/04-IP线-个人IP与X运营.md',      title: 'IP 线 · 个人 IP 与 X', group: '三条线', blurb: '定位、平台分工、X 运营方案' },
+    { id: 'pool',      file: 'docs/11-素材库与候选产品池.md',       title: '素材库与候选产品池', group: '三条线', blurb: 'X 内容弹药和下一个落地项目的候选' },
     { id: 'landing',   file: 'docs/05-落地线-科研新手助手.md',      title: '落地线 · 科研新手助手', group: '三条线', blurb: '第一个真实项目：用户、路径、阶段' },
     { id: 'infra',     file: 'docs/06-基础设施.md',               title: '基础设施',       group: '支撑', blurb: '服务器、域名、架构和成本' },
     { id: 'money',     file: 'docs/07-独立站与盈利.md',            title: '独立站与盈利',    group: '支撑', blurb: '先卖服务，再卖工具' },
     { id: 'todo',      file: 'docs/08-行动清单.md',               title: '行动清单',       group: '执行', blurb: '这两周要做的事，可以直接勾选' },
+    { id: 'open',      file: 'docs/12-待解决问题与产出物.md',       title: '待解决问题',     group: '执行', blurb: '还没定的事，以及所有产出物在哪里' },
     { id: 'decisions', file: 'decisions/决策记录.md',             title: '决策记录',       group: '执行', blurb: '每个决定的理由和放弃的选项' },
     { id: 'log-1031',  file: 'logs/2026-10-31-整体方向讨论.md',     title: '讨论纪要 · 10-31', group: '执行', blurb: '这次讨论从哪里开始、怎么走到这里' },
     { id: 'map',       file: 'research/水生毒理学领域地图.md',       title: '水生毒理学领域地图', group: '成果', blurb: '落地线第一份交付物' },
@@ -145,7 +148,9 @@
         <div class="block-head"><h2>成果与学习展示</h2></div>
         <div class="cards">
           <a class="card" href="#map"><b>水生毒理学领域地图</b><small>落地线第一份交付物：七个方向、入门综述、选方向对照表</small></a>
-          <a class="card" href="#learn"><b>学习地图</b><small>每一环要掌握什么、已经研究过什么、下一步练什么</small></a>
+          <a class="card" href="#learn"><b>学习地图</b><small>每一环要掌握什么、已经研究过什么、下一步练什么，以及“能力前后”</small></a>
+          <a class="card" href="#ip-think"><b>四个月的阶段叙事</b><small>从 3D 探索到开源拆解，再到走向真实需求，每一步为什么转向</small></a>
+          <a class="card" href="#pool"><b>素材库</b><small>研究里自己扩展的代表作和独立作品，X 内容的现成弹药</small></a>
           <a class="card" href="research/探索档案/index.html" target="_blank" rel="noopener"><b>探索档案 ↗</b><small>2026 年 7～10 月：95 个仓库、约 650 项研究、400 多个演示</small></a>
         </div>
       </section>
