@@ -4,6 +4,7 @@
     { id: 'core',      file: 'docs/01-核心判断.md',               title: '核心判断',       group: '方向', blurb: 'AI 是工具、数据是价值、人的价值在哪里' },
     { id: 'status',    file: 'docs/02-现状分析.md',               title: '现状分析',       group: '方向', blurb: '四个月积累的优势、短板、机会、风险' },
     { id: 'roadmap',   file: 'docs/03-长期路线.md',               title: '长期路线',       group: '方向', blurb: '三条线在 3 / 6 / 12 个月各做什么' },
+    { id: 'runway',    file: 'docs/13-三个月跑道计划.md',          title: '三个月跑道计划', group: '方向', blurb: '收入优先：求职与接单并行，三个检查点' },
     { id: 'learn',     file: 'docs/09-学习地图.md',               title: '能力线 · 学习地图', group: '三条线', blurb: '按数据闭环补短板，每一项都落到项目上' },
     { id: 'ip-think',  file: 'docs/10-个人IP构建思想.md',          title: 'IP 线 · 构建思想', group: '三条线', blurb: 'IP 的结构、三样资产、阶段叙事、构建原则' },
     { id: 'ip',        file: 'docs/04-IP线-个人IP与X运营.md',      title: 'IP 线 · 个人 IP 与 X', group: '三条线', blurb: '定位、平台分工、X 运营方案' },
@@ -18,7 +19,7 @@
     { id: 'map',       file: 'research/水生毒理学领域地图.md',       title: '水生毒理学领域地图', group: '成果', blurb: '落地线第一份交付物' },
   ];
   const EXTERNAL = [{ title: '探索档案', href: 'research/探索档案/index.html', group: '成果', blurb: '95 个仓库、650 项研究的可搜索档案' }];
-  const GUIDE = ['core', 'status', 'roadmap', 'todo'];
+  const GUIDE = ['core', 'status', 'roadmap', 'runway', 'todo'];
   const byFile = Object.fromEntries(PAGES.map(p => [p.file, p]));
   const byId = Object.fromEntries(PAGES.map(p => [p.id, p]));
   const cache = {};
@@ -116,7 +117,7 @@
       </section>
 
       <section class="block">
-        <div class="block-head"><h2>三条线，现在在做什么</h2></div>
+        <div class="block-head"><h2>现在在做什么</h2></div>
         <div class="lines">
           ${(site.focus || []).map(f => `
             <a class="line" href="#${f.route}">
