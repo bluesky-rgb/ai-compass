@@ -1,6 +1,7 @@
 /* AI 探索罗盘：读取仓库里的 Markdown，按引导顺序展示。内容只改 .md 文件即可，网页自动更新。 */
 (function () {
   const PAGES = [
+    { id: 'overview',  file: 'docs/00-一页总览.md',               title: '一页总览',       group: '方向', blurb: '忘了方向时先读这一页' },
     { id: 'core',      file: 'docs/01-核心判断.md',               title: '核心判断',       group: '方向', blurb: 'AI 是工具、数据是价值、人的价值在哪里' },
     { id: 'status',    file: 'docs/02-现状分析.md',               title: '现状分析',       group: '方向', blurb: '四个月积累的优势、短板、机会、风险' },
     { id: 'roadmap',   file: 'docs/03-长期路线.md',               title: '长期路线',       group: '方向', blurb: '三条线在 3 / 6 / 12 个月各做什么' },
@@ -19,7 +20,7 @@
     { id: 'map',       file: 'research/水生毒理学领域地图.md',       title: '水生毒理学领域地图', group: '成果', blurb: '落地线第一份交付物' },
   ];
   const EXTERNAL = [{ title: '探索档案', href: 'research/探索档案/index.html', group: '成果', blurb: '95 个仓库、650 项研究的可搜索档案' }];
-  const GUIDE = ['core', 'status', 'roadmap', 'runway', 'todo'];
+  const GUIDE = ['overview', 'core', 'status', 'roadmap', 'runway', 'todo'];
   const byFile = Object.fromEntries(PAGES.map(p => [p.file, p]));
   const byId = Object.fromEntries(PAGES.map(p => [p.id, p]));
   const cache = {};
@@ -100,7 +101,7 @@
       <section class="hero">
         <p class="eyebrow">长期指导与存档 · 更新于 ${esc(site.updated || '')}</p>
         <h1>一个普通人在 AI 时代，<br>从探索走向落地。</h1>
-        <p class="lead">三条线同时推进：<b>能力线</b>补齐 AI 数据闭环，<b>IP 线</b>公开记录并积累信任，<b>落地线</b>用真实场景验证价值并走向盈利。</p>
+        <p class="lead">三条长期线同时推进：<b>能力线</b>补齐 AI 数据闭环，<b>IP 线</b>公开记录并积累信任，<b>落地线</b>用真实场景验证价值并走向盈利。前三个月，<b>收入线</b>优先。</p>
         <p class="stage"><span>当前阶段</span>${esc(site.stage || '')}</p>
       </section>
 
